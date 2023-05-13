@@ -5,22 +5,65 @@
         <meta name="viewport" content="width=device-width, initial-scle=1.0">
         <title>Jean's Personal Site</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheey" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     </head>
     <body>
         <!--header-->
         <header>
-            <nav class="navbar">
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <div class="container">
+                <h3 class="title">Jean's Personal Site</h3>
+                <nav class="content">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="menu" class="fa-solid fa-bars" onclick="myFunction()" class="dropbtn"></button>
+               
         </header>
 
         <!--header-->
 
+        <main>
+            <section class="home" id="home">
+                <div class="homeword">
+                    <h2>HI THERE !</h2>
+                    <h1>My name is <div>Jean Pan</div></h1>
+                    <p>Welcome to my personal site!</p>
+                </div>
+                <a href="#about"><button class="btn">About me<i class="fas fa-user"></i></button></a>
+            </section>
 
+            <section id="about">
+                <div>
+                    <p>I am Jean, currently a student at Pierre Elliott Trudeau High School. I will introduce myself as we go through this website together :). Let’s start with who I am!</p>
+
+                    <p>First, I am a hard-working person. I finish all tasks and assignments on time and with quality. Marks are important to me since they can reflect the efforts I put into my study. I always try my best in everything the teachers assign to me. I also joined the chemistry club for a year. As a result, in grade 10 science, I got a Science Certificate of Excellence – Highest Academic Achievement.</p>
+                     
+                    <p>Second, I love Math. I participated in the 2022 Youth Business Trend Competition. I received the Market Research Award for developing one of the most market-researched projects and the Theme Award for making one of the best projects relating to the theme against over 100 participants. I have written a few Math contests hosted by the University of Waterloo, such as Pascal, Cayley, and CIMC. I was in the first 2.4% in the 2023 Cayley Contest. I successfully got into the 2022 CIMC Honour Roll and was in the first 2.05%. I also wrote Euclid when I was in grade 10 to give it a try and was in the first 5.22%. I started self-learning calculus in grade 9 and wrote the 2023 AP Calculus BC Exam when I was in grade 10.</p>
+                    
+                    <p>Third, I like Computer Science. I self-studied HTML and CSS in grade 9 and made this website myself. I also self-learned Java and have built some small projects for fun!</p>
+                    
+                    <p>Lastly, I play basketball and the piano. I participate actively in activities such as the basketball games hosted after school when the gym is available. I play basketball outside almost every day if the weather is good. I play the piano during my spare time too. Although I stopped taking piano-level exams several years ago, I believe that emotions are more important than techniques. Therefore, I choose the songs I like and perform them using the piano!</p>
+                </div>
+            </section>
+
+
+            <section id="experience">
+
+
+            </section>
+
+            <section id="contact">
+
+
+            </section>
+        
+
+        </main>
 
 
 
