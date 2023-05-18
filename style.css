@@ -7,6 +7,8 @@
     --shadow: #d2d3d4;
     --bgdcolor: #faf1e8;
     --homecolor: #e7dfd8;
+    --textshadow: #e9e9e9cc;
+    --visited: #7a687f;
 }
 
 *{
@@ -19,6 +21,8 @@
     font-size: 1rem;
 }
 
+
+
 body{
     background-color: #e7dfd8;
 }
@@ -29,26 +33,9 @@ header a:hover{
     text-decoration-line: underline;
 }
 
-.btn{
-    padding: 0.7rem 3rem;
-    margin-top: 1rem;
-    font-size: 2rem;
-    border-radius: 5rem;
-}
-
-.btn i{
-    padding-left: 1.2rem;
-    font-size: 1.8rem;
-}
-
-.btn:hover{
-    background-color: var(--shadow);
-    cursor: pointer;
-}
-
 header{
     background-color: var(--barcolor);
-    z-index: 1000;
+    z-index: 100;
 }
 
 .container{
@@ -94,19 +81,60 @@ nav a{
     transition: all 0.3s ease 0s;
 }
 
+
+
+
+
+
+
+
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    margin-top: 4rem;
+    z-index: 202;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.show {
+    display: block;
+    opacity: 1;
+}
+
 #menu{
     position: fixed;
     right: 2rem;
     background: #584734;
     color: #fff;
-    cursor: pointer;
     font-size: 1.7rem;
     padding: 1rem 1.3rem;
-    z-index: 1002;
+    z-index: 201;
     display: none;
     margin-top: 0.65rem;
+    cursor: pointer;
 }
 
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+/*MAIN STARTS HERE*/
 
 main{
     color: #000000;
@@ -120,10 +148,19 @@ section{
 
 .home{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    flex-flow: column;
-    padding: 0 15rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
+
+.word{
+    margin: 30vh 0;
+    margin-right: 5vw;
+}
+
 
 .home h2{
     font-size: 2.3rem;
@@ -133,10 +170,9 @@ section{
     font-size: 4.7rem;
 }
 
-.home h1 div{
+.home h1 span{
     font-size: 4.9rem;
     text-decoration: underline;
-    display: inline;
 }
 
 .home p{
@@ -144,9 +180,36 @@ section{
     padding: 1rem 0;
 }
 
+.btn{
+    padding: 0.7rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding-left: 1.2rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background-color: var(--shadow);
+    cursor: pointer;
+}
+
 .home a{
     width: 282px;
 }
+
+.home img {
+    width: 100%;
+    max-width: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 2vw 4vw;
+}
+
+
 
 #about{
     background-color: var(--bgdcolor);
@@ -154,6 +217,9 @@ section{
 
 #about div{
     margin: 5rem 5rem;
+}
+
+#about .paragraph{
     padding-bottom: 6rem;
 }
 
@@ -162,6 +228,25 @@ section{
     line-height: 1.5;
     font-size: 1.3rem;
     margin-bottom: 1rem;
+}
+
+#about a{
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: underline;
+}
+
+#about a:hover{
+    color: inherit;
+    background-color: var(--textshadow);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+#about a:visited{
+    font-style: italic;       /*Not working*/
+    color: var(--visited);
 }
 
 
@@ -181,28 +266,50 @@ section{
 
 
 
-@media (max-width: 950px) {
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
     #menu{
         display: block;
     }
     nav{
         display: none;
     }
-    .home{
-        padding: 0 7rem;
+    .home h2{
+        font-size: calc(0.87 * 2.3rem);
     }
-    .homeword{
-        font-size: 87%;
+    .home h1{
+        font-size: calc(0.87 * 4.7rem);
+    }
+    .home h1 div{
+        font-size: calc(0.87 * 4.9rem);
+    }
+    .home p{
+        font-size: calc(0.87 * 2rem);
+    }
+    .home a{
+        width: calc(0.95 * 282px);
+    }
+    .btn{
+        font-size: calc(0.87 * 2rem);
+    }
+    .btn i{
+        font-size: calc(0.87 * 1.8rem);
     }
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1250px){
     nav ul{
         gap: 0.3rem;
-    }
-    .home{
-        padding: 0 8rem;
     }
     #about div{
         margin: 3rem 5rem;
