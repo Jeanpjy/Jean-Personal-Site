@@ -2,16 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scle=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jean's Personal Site</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
+
     <body>
-        <!--header-->
-        <header>
+        <!--header starts here-->
+        <header class="header">
             <div class="container">
                 <h3 class="title">Jean's Personal Site</h3>
                 <nav class="content">
@@ -33,74 +34,167 @@
                 </div>
             </div> 
         </header>
-
-        <!--header-->
+        <!--header ends here-->
 
         <main>
-            <section class="home" id="home">
+            <!--Home section starts-->
+            <section class="section home" id="home">
                 <div class="word">
                     <div class="homeword">
-                        <h2>HI THERE !</h2>
+                        <h2>Hi !</h2>
                         <h1>My name is <span>Jean Pan</span></h1>
                         <p>Welcome to my personal site!</p>
                     </div>
-                    <a href="#about"><button class="btn">About me<i class="fas fa-user"></i></button></a>
+                    <a href="#about"><button class="btn">About<i class="fas fa-user"></i></button></a>
                 </div>
                 <div class="image">
                     <img src="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Selfie.jpg?raw=true">
                 </div>
             </section>
+            <!--Home section ends-->
 
-            <section id="about">
-                <div class="paragraph">
-                    <p>I am Jean, currently a student at Pierre Elliott Trudeau High School. I will introduce myself as we go through this website together :). Let’s start with who I am!</p>
+            <!--About section starts-->
+            <section class="section" id="about">
+                <div class="about">
+                    <div class="paragraph">
+                        <p>I am Jean, currently a student at Pierre Elliott Trudeau High School. I will introduce myself as we go through this website together :). Let’s start with who I am!</p>
 
-                    <p>First, I am a hard-working person. I finish all tasks and assignments on time and with quality. Marks are important to me since they can reflect the efforts I put into my study. 
-                       I always try my best in everything the teachers assign to me. I also joined the chemistry club for a year. 
-                       As a result, in grade 10 science, I got a <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Science%20Certificate%20of%20Excellence_%20Jean%20Pan%20(Grade%2010%20Academic%20Science%20(SNC2D)).png?raw=true" target="_blank">Science Certificate of Excellence – Highest Academic Achievement</a>.
-                    </p>
+                        <p>First, I am a hard-working person. I finish all tasks and assignments on time and with quality. Marks are important to me since they can reflect the efforts I put into my study. 
+                           I always try my best in everything the teachers assign to me. I also joined the chemistry club for a year. 
+                           As a result, in grade 10 science, I got a <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Science%20Certificate%20of%20Excellence_%20Jean%20Pan%20(Grade%2010%20Academic%20Science%20(SNC2D)).png?raw=true" target="_blank">Science Certificate of Excellence – Highest Academic Achievement</a>.
+                        </p>
                      
-                    <p>Second, I love Math. I participated in the 2022 Youth Business Trend Competition. 
-                       I received the <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Market%20Research%20Certificate.png?raw=true" target="_blank">Market Research Award</a> for developing one of the most market-researched projects and the <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Theme%20Certificate.png?raw=true" target="_blank">Theme Award</a> for making one of the best projects relating to the theme against over 100 participants. 
-                       I have written a few Math contests hosted by the University of Waterloo, such as Pascal, Cayley, and CIMC. I was in the first 2.4% in the 2023 Cayley Contest. 
-                       I successfully got into the <a href="https://www.cemc.uwaterloo.ca/contests/past_contests/2022/2022CxMCResults.pdf" target="_blank">2022 CIMC Honour Roll</a> and was in the first 2.05%. I also wrote Euclid when I was in grade 10 to give it a try and was in the first 5.22%. 
-                       I started self-learning calculus in grade 9 and wrote the 2023 AP Calculus BC Exam when I was in grade 10.
-                    </p>
+                        <p>Second, I love Math. I participated in the 2022 Youth Business Trend Competition. 
+                           I received the <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Market%20Research%20Certificate.png?raw=true" target="_blank">Market Research Award</a> for developing one of the most market-researched projects and the <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Theme%20Certificate.png?raw=true" target="_blank">Theme Award</a> for making one of the best projects relating to the theme against over 100 participants. 
+                           I have written a few Math contests hosted by the University of Waterloo, such as Pascal, Cayley, and CIMC. I was in the first 2.4% in the 2023 Cayley Contest. 
+                           I successfully got into the <a href="https://www.cemc.uwaterloo.ca/contests/past_contests/2022/2022CxMCResults.pdf" target="_blank">2022 CIMC Honour Roll</a> and was in the first 2.05%. I also wrote Euclid when I was in grade 10 to give it a try and was in the first 5.22%. 
+                           I started self-learning calculus in grade 9 and wrote the 2023 AP Calculus BC Exam when I was in grade 10.
+                        </p>
                     
-                    <p>Third, I like Computer Science. I self-studied <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Certificate%20-%20Responsive%20Web%20Design%20-%20Oct.22,%202022.png?raw=true" target="_blank">HTML and CSS</a> in grade 9 and made this website myself. 
-                       I also self-learned <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Certificate%20-%20Java%20Programming%20-%20Aug.25,%202022.png?raw=true" target="_blank">Java</a> and have built some small projects for fun!
-                    </p>
+                        <p>Third, I like Computer Science. I self-studied <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Certificate%20-%20Responsive%20Web%20Design%20-%20Oct.22,%202022.png?raw=true" target="_blank">HTML and CSS</a> in grade 9 and made this website myself. 
+                           I also self-learned <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Certificate%20-%20Java%20Programming%20-%20Aug.25,%202022.png?raw=true" target="_blank">Java</a> and have built some small projects for fun!
+                        </p>
                     
-                    <p>Lastly, I play basketball and <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Piano.png?raw=true" target="_blank">the piano</a>. 
-                       I participate actively in activities such as the basketball games hosted after school when the gym is available. I play basketball outside almost every day if the weather is good. 
-                       I play the piano during my spare time too. Although I stopped taking piano-level exams several years ago, I believe that emotions are more important than techniques. Therefore, I choose the songs I like and perform them using the piano!
-                    </p>
+                        <p>Lastly, I play <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Basketball.jpg?raw=true" class="balllink" target="_blank">basketball</a><span class="ballword">basketball</span> and <a href="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Piano.png?raw=true" target="_blank">the piano</a>. 
+                           I participate actively in activities such as the basketball games hosted after school when the gym is available. I play basketball outside almost every day if the weather is good. 
+                           I play the piano during my spare time too. Although I stopped taking piano-level exams several years ago, I believe that emotions are more important than techniques. Therefore, I choose the songs I like and perform them using the piano!
+                        </p>
+                    </div>
+                    <div class="ball">
+                        <img src="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Basketball.jpg?raw=true">
+                    </div>
                 </div>
-                <div>
-                    <img src="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Basketball.jpg?raw=true">
+
+                <p class="rewards">See all <a href="photogallery.html" target="_blank">Rewards and Certifications</a></p>
+
+            </section>
+            <!--About section ends-->
+
+            <!--Experience section starts-->
+            <section class="section" id="experience">
+                <h1 class="expHeading">My Experience</h1>
+                <div class="boxContainer">
+
+                    <div class="box">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>May, 2021</span>
+                        <h3>Volunteer</h3>
+                        <p>
+                            Volunteer for Spring Sports Day at Shanghai United International School (Shanghai, China)
+                            <ul> 
+                                <li>Assist teachers to manage students</li>
+                                <li>Record students' scores</li>
+                                <li>Arrange the required equipment and sporting stuff</li>
+                                <li>Keep students safe</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>Sep.20, 2022</span>
+                        <h3>Volunteer</h3>
+                        <p>
+                            Volunteer for Richmond Hill Political Mayor Campaign (Richmond Hill, ON, Canada)
+                            <ul> 
+                                <li>Canvass in specific communities</li>
+                                <li>Communicate and create effective conversation with residents for supporting Mr.Perrelli for the mayor selection of RH</li>
+                                <li>Help to give out flyers</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>Oct.2, 2022</span>
+                        <h3>Volunteer</h3>
+                        <p>
+                            Volunteer for Back-to-School Party by Canada High School Students Union (Richmond Hill, ON, Canada)
+                        </p>
+                        <ul class="list"> 
+                            <li>Participate in the event promotion and organization</li>
+                            <li>Help students sign in and distribute raffle tickets</li>
+                            <li>Assist in cleaning up and after-event works</li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="box">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>Oct.27, 2022</span>
+                        <h3>Volunteer</h3>
+                        <p>
+                            Volunteer for Parents Night Student Secretary, Pierre Elliott Trudeau High School (Markham, ON, Canada)
+                            <ul> 
+                                <li>Assist teachers to set up for the event</li>
+                                <li>Communicate with both parents and teachers to keep the event running in order</li>
+                                <li>Rearrange the schedule parents have booked when necessary</li>
+                            </ul>
+                        </p>
+                    </div>
+
                 </div>
-            </section>
-
-
-            <section id="experience">
-
 
             </section>
+            <!--Experience section ends-->
 
-            <section id="contact">
+            <!--Contatct section starts-->
+            <section class="section" id="contact">
+                <div class="toppadding"></div>
 
+                <div class="contents">
+                    <img src="https://github.com/Jeanpjy/Jean-Personal-Site/blob/main/Sources/Selfie%202.jpg?raw=true">
+                    
+                    <div class="contact-section">
+                        <h3>Contact Me</h3>
+                        
+                        <address class="contactinfo">
+                            <div><i class="fa-regular fa-envelope"></i><a href="mailto:panjingyun2007@outlook.com" class="email">panjingyun2007@outlook.com</a></div>
+                            <div><i class="fa-solid fa-school"></i><p class="school">Pierre Elliott Trudeau High School</p></div>
+                        </address>
+
+                        <div class="form-container">
+                            <form method="post" action="form-handler.php">
+                                <fieldset>
+                                    <label for="full-name">Full Name: <input id="full-name" name="full-name" type="text" autocomplete="name" required></label>
+                                    <label for="email">Your Email: <input id="email" name="email" type="email" autocomplete="email" placeholder="example@outlook.com" required></label>
+                                    <label for="message">Your Message: <textarea id="message" name="message" rows="5" cols="30" placeholder="I like this website because ..."></textarea>
+                                </fieldset>
+                                <input type="submit" value="Submit" />
+                            </form>
+                        </div>
+                    </div>
+                
+                </div>
 
             </section>
-        
+            <!--Contact section ends-->
 
         </main>
 
+        <div class="bottominfo">
+            <p>Copyright © 2023 Jean Pan. All Rights Reserved.</p>
+        </div>
 
-
-
-
-
-
-        
     </body>
 </html>
