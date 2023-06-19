@@ -41,11 +41,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo 'There was an error submitting the form. Please try again.';
   }
 }
-}
+
 ?>
-
-
-
-
-
-
