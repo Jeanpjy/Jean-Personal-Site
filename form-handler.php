@@ -1,4 +1,5 @@
 <?php
+$GithubRawURI= "https://raw.githubusercontent.com/UserName/GitName/FileName.php”;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Retrieve form data
   $name = $_POST['name'];
