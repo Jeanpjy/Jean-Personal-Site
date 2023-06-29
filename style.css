@@ -391,6 +391,15 @@ main{
     max-width: 100%;
 }
 
+.right-part{
+    height: calc(100vh - 5rem);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .contact-section{
     flex-grow: 1;
 }
