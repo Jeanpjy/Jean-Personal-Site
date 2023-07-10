@@ -401,7 +401,8 @@ main{
 }
 
 .right-part{
-    height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
+    height: fit-content;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
@@ -444,9 +445,15 @@ main{
     color: inherit;
 }
 
+.form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 form{
     margin-top: 2.7rem;
-    padding-left: 9%;
+    width: 84%;
 }
 
 label{
@@ -458,7 +465,7 @@ label{
 input, textarea{
     display: block;
     margin: 9px 0 0 0;
-    width: 90%;
+    width: 100%;
     min-height: 2.3em;
     padding-left: 0.3rem;
     font-size: 1.2rem;
@@ -476,7 +483,7 @@ input[type='submit']:hover{
 .bottominfo{
     display: block;
     background-color: #ffffff;
-    height: 2rem;
+    height: fit-content;
     text-align: center;
 }
 
