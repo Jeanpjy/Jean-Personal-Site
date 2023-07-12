@@ -160,7 +160,8 @@ main{
 }
 
 .home .left-part{
-    height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
+    height: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
