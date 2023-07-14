@@ -220,13 +220,6 @@ main{
     margin: 2vw 4vw;
 }
 
-.expHeading{
-    font-family: 'Dosis', sans-serif;;
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 2.5rem;
-}
-
 /*Home Section Ends Here*/
 
 
@@ -317,13 +310,23 @@ main{
 
 #experience{
     background-color: var(--homecolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expHeading{
+    font-family: 'Dosis', sans-serif;;
+    font-size: 3rem;
+    margin-top: 2.5rem;
 }
 
 .boxContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    margin: 4.8% 8%;
+    margin: 4.6% 0;
+    width: 92%;
 }
 
 .box{
