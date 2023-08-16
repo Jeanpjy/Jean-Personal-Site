@@ -18,7 +18,7 @@
     border: none;
     text-decoration: none;
     max-width: 100vw;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 
@@ -323,6 +323,7 @@ main{
 
 .boxContainer{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 4.6% 0;
@@ -368,7 +369,7 @@ main{
 }
 
 .box ul{
-    padding-left: 1rem;
+    padding: 0.4rem 0 0.4rem 1rem;
 }
 
 .box ul li{
