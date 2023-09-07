@@ -45,7 +45,6 @@ body{
     z-index: 1000;
 }
 
-
 .title{
     float: left;
     margin-top: 2rem;
@@ -54,7 +53,6 @@ body{
     font-size: 1.3rem;
 }
 
-
 nav ul{
     display: flex;
     justify-content: flex-end;
@@ -62,7 +60,6 @@ nav ul{
     list-style-type: none;
     gap: 1rem;
 }
-
 
 nav ul li{
     display: flex;
@@ -83,26 +80,8 @@ nav a{
 
 
 
-
-
-
-
-/*Need DEBUG*/
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    margin-top: 4rem;
-    z-index: 202;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-  
-.show {
-    display: block;
-    opacity: 1;
-}
+/*BUG FINALLY FIXED!!*/
+/*Drop-down Menu*/
 
 #menu{
     position: fixed;
@@ -117,20 +96,33 @@ nav a{
     cursor: pointer;
 }
 
+.dropdown-content {
+    display: none;
+    position: fixed;
+    right: 2rem;
+    margin-top: 5rem;
+    z-index: 202;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.show {
+    display: block;
+    opacity: 1;
+}
+
 .dropdown-content a {
+    font-size: 1.2rem;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: right;
 }
   
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
-
-
-
-
 
 
 
