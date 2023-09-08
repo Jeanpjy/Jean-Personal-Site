@@ -97,27 +97,35 @@ nav a{
 }
 
 .dropdown-content {
-    display: none;
+    /*display: none;*/ /*A binary property: either show or not show. Don't have transitions.*/
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
     position: fixed;
     right: 2rem;
     margin-top: 5rem;
     z-index: 202;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
 }
   
 .show {
     display: block;
+    visibility: visible;
     opacity: 1;
 }
 
 .dropdown-content a {
     font-size: 1.2rem;
     color: black;
+    background-color: var(--barcolor);
     padding: 12px 16px;
+    border-bottom: 0.5px solid #eeeeee;
     text-decoration: none;
     display: block;
     text-align: right;
+}
+
+.dropdown-content a:last-of-type {
+    border-bottom: none;
 }
   
 .dropdown-content a:hover {
