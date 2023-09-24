@@ -26,6 +26,10 @@ body{
     background-color: #e7dfd8;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 
 .header{
     background-color: var(--barcolor);
@@ -266,7 +270,6 @@ main{
     color: inherit;
     background-color: var(--textshadow);
     transition: all 0.3s ease 0s;
-    cursor: pointer;
 }
 
 .paragraph a:visited{
@@ -366,6 +369,22 @@ main{
     font-size: 1.5rem;
     font-family: Karla;
     padding-bottom: 0.4rem;
+}
+
+.box p a{
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: underline;
+    color: inherit;
+}
+
+.box p a:hover{
+    background-color: var(--textshadow);
+    transition: all 0.3s ease 0s;
+}
+
+.box p a:visited{
+    color: var(--visited);
 }
 
 .box ul{
