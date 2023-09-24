@@ -51,10 +51,10 @@ a:hover{
 
 .title{
     float: left;
-    margin-top: 2rem;
+    margin-top: 32px;
     margin-left: 2rem;
     font-family: 'Josefin Sans';
-    font-size: 1.3rem;
+    font-size: 20.8px;
 }
 
 nav ul{
@@ -68,7 +68,6 @@ nav ul{
 nav ul li{
     display: flex;
     align-items: center;
-
 }
 
 nav a{
@@ -89,29 +88,29 @@ nav a{
 
 #menu{
     position: fixed;
-    right: 2rem;
+    right: 1.8rem;
     background: #584734;
     color: #fff;
-    font-size: 1.7rem;
-    padding: 1rem 1.3rem;
+    font-size: 27.2px;
+    padding: 16px 19.2px;
     z-index: 2000;
     display: none;
-    margin-top: 0.65rem;
+    margin-top: 10.4px;
     cursor: pointer;
 }
 
 .dropdown-content {
-    width: 9rem;
+    width: 144px;
     /*display: none;*/ /*A binary property: either show or not show. Don't have transitions.*/
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
     position: fixed;
-    right: 2rem;
-    margin-top: 5rem;
+    right: 1.8rem;
+    margin-top: 80px;
     z-index: 202;
 }
-  
+
 .show {
     display: block;
     visibility: visible;
@@ -119,7 +118,7 @@ nav a{
 }
 
 .dropdown-content a {
-    font-size: 1.2rem;
+    font-size: 19.2px;
     color: black;
     background-color: var(--barcolor);
     padding: 15px 16px;
@@ -148,7 +147,7 @@ main{
 .section{
     height: fit-content;
     min-height: 100vh;
-    padding-top: 5rem;
+    padding-top: 80px;
 }
 
 
@@ -165,7 +164,7 @@ main{
 }
 
 .home .left-part{
-    min-height: calc(100vh - 5rem);
+    min-height: calc(100vh - 80px);
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -214,7 +213,7 @@ main{
 }
 
 .home a{
-    width: 282px;
+    width: 17.63rem;
 }
 
 .home img {
@@ -256,9 +255,9 @@ main{
 }
 
 .paragraph p{
-    text-indent: 2.5em;
+    text-indent: 2.5rem;
     line-height: 1.5;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .paragraph a{
@@ -296,6 +295,8 @@ main{
 }
 
 .rewards{
+    font-size: 1.1rem;
+    font-family: inherit;
     padding-bottom: 3rem;
     display: block;
     text-align: center;
@@ -303,7 +304,6 @@ main{
 
 .rewards > a{
     font: inherit;
-    font-family: inherit;
     color: inherit;
 }
 
@@ -397,6 +397,8 @@ main{
 }
 
 .boxContainer iframe{
+    width: 29.4rem;
+    height: 30.6rem;
     margin: 2rem;
     align-self: center;
 }
@@ -413,7 +415,7 @@ main{
 
 .toppadding{
     display: block;
-    height: 5rem;
+    height: 80px;
     background-color: #ffffff;
 }
 
@@ -425,13 +427,13 @@ main{
 }
 
 .contents img{
-    max-height: calc(100vh - 5rem);
+    max-height: calc(100vh - 80px);
     object-fit: contain;
     max-width: 100%;
 }
 
 .right-part{
-    min-height: calc(100vh - 5rem);
+    min-height: calc(100vh - 80px);
     height: fit-content;
     flex-grow: 1;
     display: flex;
@@ -591,6 +593,9 @@ input[type='submit']:hover{
 }
 
 @media (max-width: 520px) {
+    .index{
+        font-size: 80%;
+    }
     .word{
         margin-right: 0;
     }
