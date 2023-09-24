@@ -101,6 +101,7 @@ nav a{
 }
 
 .dropdown-content {
+    width: 9rem;
     /*display: none;*/ /*A binary property: either show or not show. Don't have transitions.*/
     visibility: hidden;
     opacity: 0;
@@ -121,7 +122,7 @@ nav a{
     font-size: 1.2rem;
     color: black;
     background-color: var(--barcolor);
-    padding: 12px 16px;
+    padding: 15px 16px;
     border-bottom: 0.5px solid #eeeeee;
     text-decoration: none;
     display: block;
