@@ -297,14 +297,37 @@ main{
 .rewards{
     font-size: 1.1rem;
     font-family: inherit;
-    padding-bottom: 3rem;
-    display: block;
-    text-align: center;
+    display: inline-block;
+    margin-bottom: 4rem;
+    width: 23rem;
+    padding: 1.3rem;
+    color: #c99e6e;
+    background-color: #846e8a;
+    border-radius: 5px;
+    transition: all 0.5s;
 }
 
-.rewards > a{
+.rewards > span{
     font: inherit;
-    color: inherit;
+    position: relative;
+    transition: 0.5s;
+}
+
+.rewards > span::after{
+    content: '\00bb';
+    position: absolute;
+    right: -1.3rem;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.rewards:hover > span{
+    padding-right: 1.6rem;
+}
+
+.rewards:hover > span::after{
+    right: 0;
+    opacity: 1;
 }
 
 /*About Section Ends Here*/
