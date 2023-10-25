@@ -231,6 +231,7 @@ main{
 
 #about{
     background-color: var(--bgdcolor);
+    text-align: center;
 }
 
 #about a{
@@ -252,6 +253,7 @@ main{
 
 .paragraph{
     width: 800px;
+    text-align: left;
 }
 
 .paragraph p{
