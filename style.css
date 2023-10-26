@@ -317,6 +317,7 @@ main{
 
 .rewards > span::after{
     content: '\00bb';
+    font-size: 1.6rem;
     position: absolute;
     top: 50%;  /*Vertically center the arrow with the words beside it*/
     transform: translateY(-50%);  /*Vertically center the arrow with the words beside it*/
