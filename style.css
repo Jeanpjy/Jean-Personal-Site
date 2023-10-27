@@ -580,7 +580,8 @@ input[type='submit']:hover{
 
 @media (max-width: 1250px){
     nav ul{
-        gap: 0.3rem;
+        gap: 1rem;
+        margin-right: 2.2rem;
     }
     #about div{
         margin: 2rem;
