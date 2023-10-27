@@ -74,10 +74,7 @@ nav ul li{
 nav a{
     color: var(--textcolor);
     font-weight: bold;
-    padding-top: 2rem;
-    padding-bottom: 1.7rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 2rem 2rem 1.63rem 2rem;
     transition: all 0.3s ease 0s;
 }
 
