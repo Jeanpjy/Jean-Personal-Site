@@ -371,8 +371,8 @@ main{
 
 .box i{
     position: absolute;
-    top: -0.1rem;
-    left: -1.6rem;
+    top: -0.13rem;
+    left: -1.58rem;
     font-size: 2rem;
     height: 3rem;
     width: 3rem;
@@ -380,6 +380,15 @@ main{
     text-align: center;
     background-color: #cca77d;
     border-radius: 50%;
+}
+
+.box .work{
+    background-color: #b0ccf0;
+}
+
+.box .study{
+    font-size: 1.8rem;
+    background-color: #ddc7f1;
 }
 
 .box span{
